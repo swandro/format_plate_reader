@@ -4,6 +4,7 @@ Takes time course readings from the SpectraMax plate reader or the Biotek plate 
 Runs in Python3.
 
 Usage:
+
 python SpectraMax_format.py inputfile > output.tsv
 
 python Biotek_format.py inputfile > output.tsv
