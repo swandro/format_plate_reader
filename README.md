@@ -5,4 +5,5 @@ Runs in Python3.
 
 Usage:
 python SpectraMax_format.py inputfile > output.tsv
+
 python Biotek_format.py inputfile > output.tsv
