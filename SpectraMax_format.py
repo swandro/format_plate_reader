@@ -22,11 +22,13 @@ def process_plate(plate:[str]):
 #Go through the file and process the text into lists
 with open(sys.argv[1],'r', encoding = 'iso-8859-1') as openfile:
     i = 0 #Glocal line count
-    for i in range(5):
-        openfile.readline()
+    while True:
+        line = openfile.readline().strip()
+        if line[0:4] == "Time":
+            break
     while True:
         plate = list(islice(openfile, 9))
-        if not plate or plate[0]=="~End\n":
+        if not plate or plate[0][0]=="~":
             break
         process_plate(plate)
 
